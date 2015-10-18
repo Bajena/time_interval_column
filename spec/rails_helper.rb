@@ -1,6 +1,6 @@
 # This file is copied to spec/ when you run 'rails generate rspec:install'
 ENV['RAILS_ENV'] ||= 'test'
-require File.expand_path('../../dummy/config/environment', __FILE__)
+require File.expand_path('../../spec/dummy/config/environment', __FILE__)
 require File.expand_path('../../lib/time_interval_column', __FILE__)
 # Prevent database truncation if the environment is production
 abort("The Rails environment is running in production mode!") if Rails.env.production?
