@@ -9,7 +9,7 @@ module TimeIntervalColumn
       attr_accessible "#{column_name}_type".to_sym, "#{column_name}_value".to_sym if options[:attr_accessible] == true
 
       if !kind_of?(Enumerize)
-        include Enumerize
+        extend Enumerize
       end
 
       enumerize "#{column_name}_type".to_sym, in: { year: 0, month: 1, day: 2, hour: 3, minute: 4, second: 5 }

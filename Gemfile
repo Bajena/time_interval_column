@@ -14,4 +14,4 @@ gemspec
 # gem 'debugger', group: [:development, :test]
 
 gem 'enumerize'
-gem 'pry-debugger'
+gem 'pry-debugger', group: [:development, :test]
